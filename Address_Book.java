@@ -255,6 +255,46 @@ public class Address_Book{
                 break;
         }
 
+        //for deleting a provided contact
+        System.out.println("Press 1 for deleting a particular contact\n Press 2 for exit");
+        Scanner delete=new Scanner(System.in);
+        int deletion=delete.nextInt();
+        switch(deletion)
+        {
+            case 1:
+                System.out.println("Enter the first name of the contact for deletion\n or press exit for exit");
+                Scanner del=new Scanner(System.in);
+                String dele=del.nextLine();
+
+                if(person1.getName().equals(dele))
+                {
+                    list.remove(person1);
+                }
+                else if(person2.getName().equals(dele))
+                {
+                    list.remove(person2);
+                }
+                else if(person3.getName().equals(dele))
+                {
+                    list.remove(person3);
+                }
+                else if(person3.getName().equals(dele))
+                {
+                    list.remove(person3);
+                }
+                else if(person4.getName().equals(dele))
+                {
+                    list.remove(person4);
+                }
+                else
+                {
+                    break;
+                }
+
+            default:
+                break;
+        }
+
 
 
 
